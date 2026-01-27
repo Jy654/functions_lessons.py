@@ -17,7 +17,22 @@
 
 # Hint: use the random library's choice or randint method to choose a random value between 1 and 6.
 
-
+def throw_dice():
+    import random
+    die1 = random.randint(1, 6)
+    die2 = random.randint(1, 6)
+    return die1, die2
+def roll_result(die1, die2):
+    sum_dice = die1 + die2
+    if sum_dice <= 6:
+        return f"The sum of your dice is {sum_dice}. Unfortunate"
+    elif 6 < sum_dice < 10:
+        return f"The sum of your dice is {sum_dice}. You have a good chance"
+    else:
+        return f"The sum of your dice is {sum_dice}. It looks like a winning roll"
+die1, die2 = throw_dice()
+result = roll_result(die1, die2)
+print(result)
 
 # Interactions Between Functions Practice #2
 # Create a function called reduce_list() that takes a list (numbers) as an argument, and returns also a list, but removing duplicates (leaving only one of the numbers if there are duplicates) and removing the highest value. The order of the elements can be changed.
