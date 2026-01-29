@@ -32,7 +32,7 @@ def roll_result(die1, die2):
         return f"The sum of your dice is {sum_dice}. It looks like a winning roll"
 die1, die2 = throw_dice()
 result = roll_result(die1, die2)
-print(result)
+print(result) 
 
 # Interactions Between Functions Practice #2
 # Create a function called reduce_list() that takes a list (numbers) as an argument, and returns also a list, but removing duplicates (leaving only one of the numbers if there are duplicates) and removing the highest value. The order of the elements can be changed.
